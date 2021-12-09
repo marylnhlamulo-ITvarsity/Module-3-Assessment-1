@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     margin: 0;
     padding: 0;
@@ -13,7 +13,15 @@ body{
 }
 
 .body-home{
-    background-image: url('images/background-01-port.png');
+    background-image: url('images/home\ background\ 1.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-starters{
+    background-image: url('images/menu\ background.jpeg');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -21,7 +29,7 @@ body{
 }
 
 .body-meals{
-    background-image: url('images/background-02-port.png');
+    background-image: url('images/menu\ background.jpeg');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -29,7 +37,7 @@ body{
 }
 
 .body-drinks{
-    background-image: url('images/background-02-port.png');
+    background-image: url('images/menu\ background.jpeg');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -37,7 +45,23 @@ body{
 }
 
 .body-deserts{
-    background-image: url('images/background-02-port.png');
+    background-image: url('images/menu\ background.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-snacks{
+    background-image: url('images/menu\ background.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-order{
+    background-image: url('images/menu\ background.jpeg');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -47,43 +71,45 @@ body{
 /* ============= HEADER ============= */
 
 .header{
-    background-color: #2196f3;
+    background-color: black;
 
     width: 100%;
     height: 50px;
     top: 0;
+    
 
     position: fixed;
     overflow: hidden;
+
     text-align: center;
 }
 
 .header i{
-    float: left;
+    float: left !important;
     padding: 17px 0px 0px 17px;
     color: #ffffff;
+    margin-bottom: 100px;
 }
 
 .header img{
-    width: 150px;
-    padding-top: 14px;
-    padding-right: 25px;
+    width: 100%;
+    
+    height: 107px;
+    position: fixed;
+    display: block;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 /* ============= HOME PAGE ============= */
 
 #home-logo-img{
-    width: 50px;
+    width: 100%;
+    height: 107px;
     display: block;
     margin: auto;
-    padding: 25px 10px 10px 10px;
-}
-
-#home-logo-text{
-    width: auto;
-    display: block;
-    margin: auto;
-    padding: 25px;
+    padding: 0;
+    padding-bottom: 10px;
 }
 
 /* ===== HOME PAGE MENU===== */
@@ -92,11 +118,11 @@ body{
     text-decoration: none;
     text-transform: uppercase;
 
-    color: white;
+    color:#b33434;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    border: 5px solid white;
+    border: 5px solid #b33434;
 
     display: block;
     margin: auto;
@@ -104,10 +130,50 @@ body{
     width: 80%;
 }
 
+/* ============= STARTERS PAGE ============= */
+
+#starters{
+    padding: 50px;
+    margin-top: 119px;
+}
+
+/* ===== STARTERS PAGE MENU===== */
+
+.starters-list a{
+    text-decoration: none;
+}
+
+.starters-list-item {
+    border: 5px solid #b33434;
+    margin: 10px;
+}
+
+.starters-list-item h1{
+    font-weight: bold;
+    font-size: 26px;
+    color: #b33434;
+    padding-left: 10px;
+}
+
+.starters-list-item i{
+    float: right;
+    color: #b33434;
+    padding-right: 10px;
+}
+
+.starters-list-item p{
+    font-size: 15px;
+    color: #4d4d4d;
+    padding-top: -7px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
 /* ============= MEALS PAGE ============= */
 
 #meals{
     padding: 50px;
+    margin-top: 119px;
 }
 
 /* ===== MEALS PAGE MENU===== */
@@ -117,20 +183,20 @@ body{
 }
 
 .meals-list-item {
-    border: 5px solid #1a1a1a;
+    border: 5px solid #b33434;
     margin: 10px;
 }
 
 .meals-list-item h1{
     font-weight: bold;
     font-size: 26px;
-    color: #1a1a1a;
+    color: #b33434;
     padding-left: 10px;
 }
 
 .meals-list-item i{
     float: right;
-    color: #1a1a1a;
+    color: #b33434;
     padding-right: 10px;
 }
 
@@ -144,8 +210,9 @@ body{
 
 /* ============= DRINKS PAGE ============= */
 
-#meals{
+#drinks{
     padding: 50px;
+    margin-top: 119px;
 }
 
 /* ===== DRINKS PAGE MENU===== */
@@ -155,20 +222,20 @@ body{
 }
 
 .drinks-list-item {
-    border: 5px solid #1a1a1a;
+    border: 5px solid #b33434;
     margin: 10px;
 }
 
 .drinks-list-item h1{
     font-weight: bold;
     font-size: 26px;
-    color: #1a1a1a;
+    color: #b33434;
     padding-left: 10px;
 }
 
 .drinks-list-item i{
     float: right;
-    color: #1a1a1a;
+    color: #b33434;
     padding-right: 10px;
 }
 
@@ -184,6 +251,7 @@ body{
 
 #deserts{
     padding: 50px;
+    margin-top: 119px;
 }
 
 /* ===== DESERTS PAGE MENU===== */
@@ -193,20 +261,20 @@ body{
 }
 
 .deserts-list-item {
-    border: 5px solid #1a1a1a;
+    border: 5px solid #b33434;
     margin: 10px;
 }
 
 .deserts-list-item h1{
     font-weight: bold;
     font-size: 26px;
-    color: #1a1a1a;
+    color: #b33434;
     padding-left: 10px;
 }
 
 .deserts-list-item i{
     float: right;
-    color: #1a1a1a;
+    color: #b33434;
     padding-right: 10px;
 }
 
@@ -218,89 +286,189 @@ body{
     padding-left: 10px;
 }
 
-/* ============= RECIPE PAGE ============= */
+/* ============= SNACKS PAGE ============= */
 
-#recipe{
+#snacks{
+    padding: 50px;
+    margin-top: 119px;
+}
+
+/* ===== SNACKS PAGE MENU===== */
+
+.snacks-list a{
+    text-decoration: none;
+}
+
+.snacks-list-item {
+    border: 5px solid #b33434;
+    margin: 10px;
+}
+
+.snacks-list-item h1{
+    font-weight: bold;
+    font-size: 26px;
+    color: #b33434;
+    padding-left: 10px;
+}
+
+.snacks-list-item i{
+    float: right;
+    color: #b33434;
+    padding-right: 10px;
+}
+
+.snacks-list-item p{
+    font-size: 15px;
+    color: #4d4d4d;
+    padding-top: -7px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+/* ============= ORDER PAGE ============= */
+
+#order{
     padding-top: 50px;
+    margin-top: 119px;
 }
 
-/* ===== RECIPE PAGE MENU===== */
+/* ===== ORDER PAGE MENU===== */
 
-.recipe-details img{
-    width: 100%;
+.order-details img{
+    width: 50%;
+    margin-top: 90px;
 }
 
-.recipe-details h1{
+.order-details h1{
     font-size: 25px;
     text-align: center;
-    border: 5px solid #1a1a1a;
+    color: #b33434;
     margin: 10px;
     padding: 5px;
+    margin-top: 50px;
 }
 
-.recipe-details h2{
+.order-details-recieved p{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.order-details-recieved h1{
+    font-size: 25px;
+    text-align: center;
+    color: #b33434;
+    margin: 10px;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+.order-details-recieved img{
+    width: 100%;
+    margin-top: 90px;
+}
+
+.order-details-recieved-button a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.order-details-recieved-button{
+    width: 80%;
+    float: center;
+    background-color: #b33434;
+    text-align: center;
+    margin: auto;
+}
+
+.order-details-sides h2{
     font-size: 20px;
     text-align: left;
-    margin: 0;
+    color: #b33434;
     margin: 10px;
 }
 
-.recipe-details-info{
+.order-details-info{
     margin-left: 25px;
     margin-right: 25px;
 }
 
-.recipe-details-info p{
+.order-details-info p{
     font-size: 13px;
     display: inline-block;
+    color: white;
 }
 
-.recipe-details-ingredients label{
+.order-details-ingredients label{
     line-height: 25px;
     margin-left: 10px;
+    color: white;
 }
 
-.recipe-details-steps{
+.order-details-ingredients h2{
+    color: #b33434;
+}
+
+.order-details-sides{
     padding-top: 20px;
 }
 
-.recipe-details-steps ol{
+.order-details-sides ol{
     padding-left: 28px;
+}
+
+.order-details-sides li{
+    color: white;
+}
+
+.order-details-button{
+    width: 80%;
+    float: center;
+    background-color: #b33434;
+    margin: auto;
+}
+
+.order-details-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.order-details-form h2{
+    color: #b33434;
+    margin-top: 50px;
+} 
+
+.order-details-form textarea{
+    height : 65px;
+    width  : 100%;
+    margin : 12px 0;
+    border  : 1px solid #929292;
+    margin-top: 1px;
 }
 
 /* ============= RESPONSIVE LAYOUTS ============= */
 
 @media only screen and (min-width: 600px) {
-    #meals{
-        width: 80%;
-        margin: auto;
-    }
-
-    #recipe{
+    #order{
         width: 80%;
         margin: auto;
     }
 }
 
 @media only screen and (min-width:1000px){
-    #meals{
-        width: 60%;
-        margin: auto;
-    }
-
-    #recipe{
+    #order{
         width: 60%;
         margin: auto;
     }
 }
 
 @media only screen and (min-width:1500px){
-    #meals{
-        width:40%;
-        margin: auto;
-    }
-
-    #recipe{
+    #order{
         width: 40%;
         margin: auto;
     }
@@ -308,10 +476,30 @@ body{
 
 @media only screen and (min-width:720px){
     .body-home{
-        background-image: url('images/background-01-land.png');
+        background-image: url('images/home\ background\ 1.jpg');
+    }
+
+    .body-starterss{
+        background-image: url('images/menu\ background\ 2.jpeg'); 
     }
 
     .body-meals{
-        background-image: url('images/background-02-land.png'); 
+        background-image: url('images/menu\ background\ 2.jpeg'); 
+    }
+
+    .body-drinks{
+        background-image: url('images/menu\ background\ 2.jpeg'); 
+    }
+
+    .body-deserts{
+        background-image: url('images/menu\ background\ 2.jpeg'); 
+    }
+
+    .body-snacks{
+        background-image: url('images/menu\ background\ 2.jpeg'); 
+    }
+
+    .body-order{
+        background-image: url('images/menu\ background\ 2.jpeg'); 
     }
 }
